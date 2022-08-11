@@ -63,6 +63,10 @@
     <Compile Include="Assets\Scrips\FollowCamera.cs" />
     <Compile Include="Assets\Scrips\Moviment.cs" />
     <Compile Include="Assets\Scrips\Enemy.cs" />
+    <Compile Include="Assets\Scrips\PlayerShoot.cs" />
+    <Compile Include="Assets\Scrips\PlayerCollision.cs" />
+    <Compile Include="Assets\Scrips\PortalManager.cs" />
+    <Compile Include="Assets\Scrips\PlayerData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

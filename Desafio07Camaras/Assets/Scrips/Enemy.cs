@@ -62,6 +62,5 @@ public class Enemy : MonoBehaviour
         {
             transform.LookAt(playerTransform);
         }
-        
     
 }

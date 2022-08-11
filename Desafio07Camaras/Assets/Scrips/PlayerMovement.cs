@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    [Range(1f, 10f)]
     public float speed = 3f;
-    public GameObject munition;
+    //public GameObject munition;
     public float cameraAxisX = 0f;
     // Start is called before the first frame update
     void Start()
@@ -33,19 +35,10 @@ public class PlayerMovement : MonoBehaviour
         {
             MovePlayer(Vector3.right);
         }
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            Shoot();
-        }
     }
     private void MovePlayer(Vector3 direction)
     {
         transform.Translate(direction * speed * Time.deltaTime);
-    }
-    private void Shoot()
-    {
-        Debug.Log("DISPARAR");
-        Instantiate(munition, transform.position, transform.rotation);
     }
     public void RotatePlayer()
     {
